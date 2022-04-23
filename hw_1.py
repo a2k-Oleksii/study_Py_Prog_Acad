@@ -39,3 +39,6 @@ if __name__ == "__main__":
     group_001.delete_student(student_eleven)
     print("X" * 30)
     print(group_001)
+    print("XY" * 30)
+    for student in group_001:
+        print(student)

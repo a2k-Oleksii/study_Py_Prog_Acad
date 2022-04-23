@@ -1,3 +1,5 @@
+
+from iterators.group_iterator import GroupIterator
 from exceptions.my_exceptions import ElevenStudentAddGroupException
 
 
@@ -48,3 +50,6 @@ class Group:
                     return element
                 elif count == len(self.list_group):
                     return None
+
+    def __iter__(self):
+        return GroupIterator(self.list_group)
